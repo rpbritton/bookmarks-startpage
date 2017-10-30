@@ -2,17 +2,19 @@
 	"manifest_version": 2,
 
 	"name": "bookmarks startpage",
-	"description": "this is a startpage that uses bookmarks",
+	"description": "this is a startpage that uses chrome bookmarks",
 	"version": "1.0",
 	"incognito": "split",
 	"chrome_url_overrides": {
 		"newtab": "startpage.html"
 	},
 	"permissions": [
-	"bookmarks"
+		"storage",
+		"bookmarks",
+		"*://*.bing.com/*"
 	],
 	"browser_action": {
 		"default_title": "bookmarks startpage",
-		"default_icon": "icon.png"
+		"default_icon": "img/icon.png"
 	}
 }

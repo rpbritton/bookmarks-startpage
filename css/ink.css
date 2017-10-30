@@ -1,0 +1,18 @@
+.ink-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	opacity: 0.2;
+	transition: opacity 600ms;
+	pointer-events: none;
+}
+
+.ink {
+	border-radius: 50%;
+	position: absolute;
+	transform: scale(0);
+	transition: transform 600ms;
+}
