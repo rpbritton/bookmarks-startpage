@@ -2,6 +2,7 @@
 	"manifest_version": 2,
 	"name": "Bookmarks Startpage",
 	"description": "This is a startpage that uses chrome bookmarks.",
+	"homepage_url": "https://github.com/rpbritton/bookmarks-startpage/",
 	"version": "1.0",
 	"incognito": "split",
 	"chrome_url_overrides": {
