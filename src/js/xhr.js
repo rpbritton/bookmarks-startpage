@@ -1,4 +1,4 @@
-function xhrGet(url, responseType = '') {
+function xhrGet(url) {
 	return new Promise((resolve, reject) => {
 		let request = new XMLHttpRequest();
 		request.onload = function() {
@@ -10,7 +10,6 @@ function xhrGet(url, responseType = '') {
 		}
 
 		request.open('GET', url);
-		request.responseType = responseType;
 		request.send();
 	});
 }

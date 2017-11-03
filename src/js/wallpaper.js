@@ -17,15 +17,14 @@ function getWallpaper() {
 }
 getWallpaper();
 */
-function setWallpaper(src) {
+function getWallpaper(src) {
 	let wallpaperImg = new Image();
 	wallpaperImg.onload = () => {
 		document.getElementById('wallpaper-vig').appendChild(wallpaperImg);
-		document.getElementById('wallpaper-blank').style.opacity = '0';
+		document.getElementById('wallpaper-vig').style.opacity = 1;
+		document.getElementById('wallpaper-blank').style.opacity = 0;
 //		setPalette(wallpaperImg);
 	}
 	wallpaperImg.id = 'wallpaper-img';
 	wallpaperImg.src = src;
 }
-setWallpaper('https://source.unsplash.com/random');
-

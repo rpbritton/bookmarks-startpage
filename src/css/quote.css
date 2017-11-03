@@ -1,0 +1,17 @@
+#quote {
+	font-family: 'Indie Flower', cursive;
+	font-size: 20px;
+	text-align: center;
+	margin: 2% auto;
+	width: 70%;
+	padding: 12px;
+	opacity: 0.5;
+	color: var(--fg-color);
+	background-color: var(--fg-faded-color);
+	box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+	opacity: 0;
+	transition: opacity 200ms;
+	border-bottom-style: solid;
+	border-width: 4px;
+}

@@ -28,4 +28,5 @@ chrome.bookmarks.search('startpage', rootFolders => {
 			});
 		}
 	}
+	wrapperCategories.style.opacity = 0.9;
 });

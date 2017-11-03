@@ -10,10 +10,15 @@
 	},
 	"permissions": [
 		"storage",
+		"contextMenus",
 		"bookmarks",
-		"*://*.bing.com/*"
+		"*://talaikis.com/api/quotes/*"
 	],
 	"icons": {
 		"128": "img/icon.png"
+	},
+	"background": {
+		"persistant": false,
+		"scripts": ["js/background.js"]
 	}
 }
