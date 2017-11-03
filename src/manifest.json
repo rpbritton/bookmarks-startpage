@@ -15,7 +15,13 @@
 		"*://talaikis.com/api/quotes/*"
 	],
 	"icons": {
-		"128": "img/icon.png"
+		"16": "img/icon16.png"
+	},
+	"icons": {
+		"48": "img/icon48.png"
+	},
+	"icons": {
+		"96": "img/icon96.png"
 	},
 	"background": {
 		"persistant": false,
