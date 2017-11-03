@@ -10,9 +10,3 @@ function setThemeDark(yes) {
 		document.body.style.setProperty('--bg-color', `#${materialColors[17][0]}`);
 	}
 }
-/*
-function setPalette(img, num = 1, qual = 1) {
-	let colorThief = new ColorThief();
-	colorThief.getPalette(img, num, qual);
-}
-*/
