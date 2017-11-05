@@ -1,11 +1,8 @@
-chrome.runtime.onInstalled.addListener(checkForSettings);
-chrome.runtime.onStartup.addListener(checkForSettings);
-function checkForSettings() {
-	chrome.storage.sync.get('settings', storage => {
-		if (storage.settings) {
-			createSettings();
-		}
-		else {
+//chrome.runtime.onInstalled.addListener(checkForSettings);
+//chrome.runtime.onStartup.addListener(checkForSettings);
+//function checkForSettings() {
+	chrome.storage.sync.get(storage => {
+		if (Object.keys(storage).length === 0) {
 			let settings = {
 				'wallpaper': {'title': 'Wallpaper', 'status': true,
 					'url': 'https://source.unsplash.com/random/1920x1080/'},
@@ -15,8 +12,11 @@ function checkForSettings() {
 			};
 			chrome.storage.sync.set({'settings': settings}, createSettings);
 		}
+		else {
+			createSettings();
+		}
 	});
-}
+//}
 
 function createSettings() {
 	chrome.storage.sync.get('settings', storage => {
