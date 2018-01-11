@@ -1,4 +1,3 @@
-
 function getWallpaper(src) {
 	let wallpaperImg = new Image();
 	wallpaperImg.onload = () => {
